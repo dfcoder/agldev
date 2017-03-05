@@ -1,0 +1,7 @@
+<ul *ngFor="let gender of catsByOwnerGender | keys">
+    <li>{{gender.key}} :
+        <ul *ngFor="let cat of gender.value">
+            <li>{{cat.name}}</li>
+        </ul>
+    </li>
+</ul>
