@@ -1,4 +1,3 @@
-import { SortByNamePipe } from './../pipes/sort-by-name.pipe';
 import { Observable } from 'rxjs/Rx';
 import { IPeople } from './entities/people';
 import { PeopleService } from './people.service';
@@ -6,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 import { _ } from 'underscore';
 
 @Component({
-    moduleId: module.id,
+    moduleId: module.id + "",
     selector: 'people',
     templateUrl: 'people.component.html'
 })
@@ -30,7 +29,7 @@ export class PeopleComponent implements OnInit {
 
                 // group people by gender
                 let peopleByGender = _.groupBy(peopleWithCats, 'gender');
-                
+
                 // instantiate viewModel
                 this.catsByOwnerGender = {};
 
@@ -43,12 +42,12 @@ export class PeopleComponent implements OnInit {
                     _.each(gender, (person) => {
                         _.each(person.pets, (pet) => {
                             // 
-                            this.catsByOwnerGender[index].push({name:pet.name});
+                            this.catsByOwnerGender[index].push({ name: pet.name });
                         });
                     })
 
                     // Sort by pet name
-                     this.catsByOwnerGender[index] = _.sortBy(this.catsByOwnerGender[index],'name');;
+                    this.catsByOwnerGender[index] = _.sortBy(this.catsByOwnerGender[index], 'name');;
                 })
             })
     }

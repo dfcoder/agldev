@@ -6,10 +6,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { KeysPipe } from './pipes/keys.pipe';
+import { HelperComponent } from './helper/helper.component';
 
 @NgModule({
   declarations: [
-    AppComponent, PeopleComponent, KeysPipe, 
+   PeopleComponent, AppComponent, , KeysPipe, HelperComponent, 
   ],
   imports: [
     BrowserModule,
