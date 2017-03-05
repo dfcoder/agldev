@@ -15,6 +15,7 @@ A.To run the solution you will need to start the server first in git bash /CMD  
 
 #Client
 B. To run the client you will need to open another CMD / bash window.
+
     1. install angular cli using:
         npm install -g @angular/cli.
     2. go to folder-> aglapp .
