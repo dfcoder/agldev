@@ -9,7 +9,7 @@ import { KeysPipe } from './pipes/keys.pipe';
 
 @NgModule({
   declarations: [
-   PeopleComponent, AppComponent, , KeysPipe, 
+   PeopleComponent,KeysPipe, AppComponent
   ],
   imports: [
     BrowserModule,
